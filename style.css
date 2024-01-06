@@ -11,7 +11,10 @@
     text-align: center;
     font-family: "Comfortaa", sans-serif;
 }
-#info,td,th {
+
+#info,
+td,
+th {
     font-size: 35px;
     font-weight: bold;
     text-align: center;
@@ -21,27 +24,91 @@
     padding: 15px;
     border: 3px solid black;
     border-radius: 10px;
+    background-color: #111111;
+    color: white;
 }
+
 #info {
     width: 90%;
     border-spacing: 15px;
 
 }
-td,th {
+
+td,
+th {
     border: 2px solid black;
 
 
 }
-#Projects {
-    width: 45%;
 
-}
+#Projects,
 #Languages {
     width: 45%;
+    vertical-align: top;
 
 }
+
+
+
 #aboutMe {
     border: 0px;
     border-spacing: 5px;
 }
 
+#aboutMeText,
+#languagesBars,
+ul,
+li {
+    font-size: 25px;
+    line-height: 1.5;
+}
+
+h2,
+h3 {
+    font-size: 35px;
+}
+
+#C\#progress,
+#JavaProgress,
+#HTMLCSSProgress {
+    width: 25%;
+    height: 10px;
+    appearance: none;
+    outline: 0px solid black;
+    
+
+}
+
+#C\#progress::-webkit-progress-bar,
+#JavaProgress::-webkit-progress-bar,
+#HTMLCSSProgress::-webkit-progress-bar {
+    background-color: #1f1f1f;
+}
+
+#C\#progress::-webkit-progress-value,
+#JavaProgress::-webkit-progress-value,
+#HTMLCSSProgress::-webkit-progress-value {
+    background-color: #fff;
+}
+
+#projectsTableName,
+#projectsTableDesc,#\- {
+    border: 0px solid black;
+    font-size: 25px;
+    border-radius: 0px;
+}
+
+#projectsTableDesc {
+    width: 80%;
+    border-spacing: 0px;
+
+}
+
+#projectsTableName {
+    width: 20%;
+    border-spacing: 0px;
+}
+
+body {
+    background-color: #18e595;
+}
