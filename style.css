@@ -10,6 +10,7 @@
     font-weight: bold;
     text-align: center;
     font-family: "Comfortaa", sans-serif;
+    color: white;
 }
 
 #info,
@@ -24,7 +25,7 @@ th {
     padding: 15px;
     border: 3px solid black;
     border-radius: 10px;
-    background-color: #111111;
+    background-color: rgba(17, 17, 17, 1);
     color: white;
 }
 
@@ -45,7 +46,7 @@ th {
 #Languages {
     width: 45%;
     vertical-align: top;
-
+    background-color: rgba(11, 11, 17, 0);
 }
 
 
@@ -53,6 +54,7 @@ th {
 #aboutMe {
     border: 0px;
     border-spacing: 5px;
+    background-color: rgba(11, 11, 11, 0);
 }
 
 #aboutMeText,
@@ -71,8 +73,8 @@ h3 {
 #C\#progress,
 #JavaProgress,
 #HTMLCSSProgress {
-    width: 25%;
-    height: 10px;
+    width: 75%;
+    height: 15px;
     appearance: none;
     outline: 0px solid black;
     
@@ -96,6 +98,8 @@ h3 {
     border: 0px solid black;
     font-size: 25px;
     border-radius: 0px;
+    background-color: rgba(11, 11, 11, 0);
+
 }
 
 #projectsTableDesc {
@@ -109,6 +113,6 @@ h3 {
     border-spacing: 0px;
 }
 
-body {
-    background-color: #18e595;
+#languagesBars {
+    line-height: 5;
 }
