@@ -5,6 +5,10 @@
     border-radius: 50%;
 }
 
+body {
+    background-color: #000000;
+    
+}
 #name {
     font-size: 65px;
     font-weight: bold;
