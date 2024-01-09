@@ -7,8 +7,9 @@
 
 body {
     background-color: #000000;
-    
+
 }
+
 #name {
     font-size: 65px;
     font-weight: bold;
@@ -20,7 +21,7 @@ body {
 #info,
 td,
 th {
-    font-size: 35px;
+    font-size: 20px;
     font-weight: bold;
     text-align: center;
     font-family: "Comfortaa", sans-serif;
@@ -63,9 +64,10 @@ th {
 
 #aboutMeText,
 #languagesBars,
+#contactInfoText,
 ul,
 li {
-    font-size: 25px;
+    font-size: 20px;
     line-height: 1.5;
 }
 
@@ -76,31 +78,35 @@ h3 {
 
 #C\#progress,
 #JavaProgress,
-#HTMLCSSProgress {
+#HTMLCSSProgress,
+#JSProgress {
     width: 75%;
     height: 15px;
     appearance: none;
     outline: 0px solid black;
-    
+
 
 }
 
 #C\#progress::-webkit-progress-bar,
 #JavaProgress::-webkit-progress-bar,
-#HTMLCSSProgress::-webkit-progress-bar {
+#HTMLCSSProgress::-webkit-progress-bar,
+#JSProgress::-webkit-progress-bar {
     background-color: #1f1f1f;
 }
 
 #C\#progress::-webkit-progress-value,
 #JavaProgress::-webkit-progress-value,
-#HTMLCSSProgress::-webkit-progress-value {
+#HTMLCSSProgress::-webkit-progress-value,
+#JSProgress::-webkit-progress-value {
     background-color: #fff;
 }
 
 #projectsTableName,
-#projectsTableDesc,#\- {
+#projectsTableDesc,
+#\- {
     border: 0px solid black;
-    font-size: 25px;
+    font-size: 20px;
     border-radius: 0px;
     background-color: rgba(11, 11, 11, 0);
 
@@ -119,4 +125,12 @@ h3 {
 
 #languagesBars {
     line-height: 5;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+#contactInfoText {
+    color: white;
+    font-size: 15px;
 }

@@ -14,6 +14,7 @@ var webpageArea = width * height;
 var testChar = document.createElement('span');
 testChar.innerHTML = 'A';
 testChar.style.fontFamily = 'monospace';
+testChar.style.fontSize = '15px';
 document.body.appendChild(testChar);
 
 // Measure the dimensions of the test character
