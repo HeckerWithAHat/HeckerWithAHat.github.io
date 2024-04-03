@@ -1,12 +1,28 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" data-theme="HeckerWithAHat">
 
 <head>
     <title>HeckerWithAHat</title>
-    <link href="style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap" rel="stylesheet">
-    <script src="background.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <script src="background.js"></script> -->
+    <script>
+        tailwind.modules = {
+            daisyui: {
+                themes: [
+                    {
+                        HeckerWithAHat: {
+                            "primary": "#FF00FF",
+                            "secondary": "#FF00FF",
+                            "accent": "#FF00FF",
+                            "neutral": "#FF00FF",
+                            "background": "#131313",
+                        }
+                    }
+                ]
+            }
+        }
+    </script>
 </head>
 
 <body>
@@ -16,18 +32,18 @@
     </header>
 
     <body>
-        <table id="info">
-            <tr>
-                <td id="aboutMe" colspan="2">
+        <div class="flex" id="info">
+            <div class="flex-row">
+                <div class="flex-col" id="aboutMe" colspan="2">
                     <h2>About Me</h2>
                     <p id="aboutMeText">
                         Hello! My name is HeckerWithAHat! I am an aspiring Indie Game Developer and Minecraft Plugin
                         Maker from America in high school. Below is a list of my Past Projects and Known Languages.
                     </p>
-                </td>
-            </tr>
-            <tr>
-                <td id="Languages">
+                </div>
+            </div>
+            <div class="flex-row">
+                <div class="flex-col" id="Languages">
                     <div id="languagesText">
                         <h3>Languages</h3>
                         <p id="languagesBars">
@@ -45,101 +61,143 @@
                             <progress id="JSProgress" value="30" max="100"></progress>
                         </p>
                     </div>
-                </td>
-                <td id="Projects">
+                </div>
+                <div class="flex-col" id="Projects">
                     <div id="projectsText">
                         <h3>Projects</h3>
-                        <table>
-                            <tr>
-                                <td id="projectsTableName">
+                        <div class="flex">
+                            <div class="flex-row">
+                                <div class="flex-col">
                                     Troll SMP
-                                </td>
-                                <td id="-">-</td>
-                                <td id="projectsTableDesc">
+                                </div>
+                                <div class="flex-col">-</div>
+                                <div class="flex-col">
                                     A Minecraft SMP Server owned by Asunqe With a plugin Developed by me.
-
-                            </tr>
-                            <tr>
-                                <td id="projectsTableName">
+                                </div>
+                            </div>
+                            <div class="flex-row">
+                                <div class="flex-col">
                                     Immune SMP
-                                </td>
-                                <td id="-">-</td>
+                                </div>
+                                <div class="flex-col">
+                                    -</div>
 
-                                <td id="projectsTableDesc">
-                                    A Minecraft SMP Server owned by SkillettYeet With a plugin Developed by me.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td id="projectsTableName">
-                                    Infuse Z
-                                </td>
-                                <td id="-">-</td>
+                                <div class="flex-col">
+                                    A Minecraft SMP Server owned by SkillettYeet With a plugin Developed by
+                                    me.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flex-row">
+                            <div class="flex-col" id="projectsTableName">
+                                Infuse Z
+                            </div>
+                            <div class="flex-col" id="-">-</div>
 
-                                <td id="projectsTableDesc">
-                                    A Public Minecraft Server owned by Asunqe and I With a plugin Developed by me.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td id="projectsTableName">
-                                    Armor SMP
-                                </td>
-                                <td id="-">-</td>
+                            <div class="flex-col" id="projectsTableDesc">
+                                A Public Minecraft Server owned by Asunqe and I With a plugin
+                                Developed by me.
+                            </div>
+                        </div>
+                        <div class="flex-row">
+                            <div class="flex-col" id="projectsTableName">
+                                Armor SMP
+                            </div>
+                            <div class="flex-col" id="-">-</div>
 
-                                <td id="projectsTableDesc">
-                                    A Minecraft SMP Server owned by PirateTales With a plugin Developed by me.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td id="projectsTableName">
-                                    Sprite SMP
-                                </td>
-                                <td id="-">-</td>
+                            <div class="flex-col" id="projectsTableDesc">
+                                A Minecraft SMP Server owned by PirateTales With a
+                                plugin Developed by me.
+                            </div>
+                        </div>
+                        <div class="flex-row">
+                            <div class="flex-col" id="projectsTableName">
+                                Sprite SMP
+                            </div>
+                            <div class="flex-col" id="-">-</div>
 
-                                <td id="projectsTableDesc">
-                                    A Minecraft SMP Server owned by BenjiSenji With a plugin Developed by me.
-                                </td>
-                            </tr>
-                            <tr>
-                                <td id="projectsTableName">
-                                    Submate
-                                </td>
-                                <td id="-">-</td>
+                            <div class="flex-col" id="projectsTableDesc">
+                                A Minecraft SMP Server owned by
+                                BenjiSenji With a plugin Developed
+                                by me.
+                            </div>
+                        </div>
+                        <div class="flex-row">
+                            <div class="flex-col" id="projectsTableName">
+                                Submate
+                            </div>
+                            <div class="flex-col" id="-">-</div>
 
-                                <td id="projectsTableDesc">
-                                    A platform for teachers to check for AI through advanced techniques
-                                </td>
-                            </tr>
-                            <tr>
-                                <td id="projectsTableName">
-                                    MyMeals
-                                </td>
-                                <td id="-">-</td>
+                            <div class="flex-col" id="projectsTableDesc">
+                                A platform for
+                                teachers to check
+                                for AI through
+                                advanced techniques
+                            </div>
+                        </div>
+                        <div class="flex-row">
+                            <div class="flex-col" id="projectsTableName">
+                                MyMeals
+                            </div>
+                            <div class="flex-col" id="-">-
+                            </div>
 
-                                <td id="projectsTableDesc">
-                                    A website for users to find recipes to easy meals that suits their time, dietary, and resource constraints
-                                </td>
-                            </tr>
-                        </table>
+                            <div class="flex-col" id="projectsTableDesc">
+                                A
+                                website
+                                for
+                                users
+                                to
+                                find
+                                recipes
+                                to
+                                easy
+                                meals
+                                that
+                                suits
+                                their
+                                time,
+                                dietary,
+                                and
+                                resource
+                                constraints
+                            </div>
+                        </div>
                     </div>
-                </td>
-            </tr>
-            <tr>
-                <td id="contactInfo" colspan="2">
-                    <div>
-                        <h3>Contact Info<h3>
-                                <p id="contactInfoText">
-                                    <a id="contactInfoText" href="discord://-/users/727603391550718042">Discord: heckerwithahat</a> <br>
-                                    <a id="contactInfoText" href="https://twitter.com/heckerwithahat">Twitter: @HeckerWithAHat</a> <br>
-                                    <a id="contactInfoText" href="https://github.com/HeckerWithAHat">GitHub: HeckerWithAHat</a> <br>
-                                    <a id="contactInfoText" href="https://www.youtube.com/channel/UC862SDV2MtCa8bqK37gAiSQ">YouTube: HeckerWithAHat</a> <br>
-                                    <a id="contactInfoText" href="https://steamcommunity.com/id/HeckerWithAHat/">Steam: HeckerWithAHat</a> <br>
-                                    <a id="contactInfoText" href="https://www.twitch.tv/heckerwithahat">Twitch: heckerwithahat</a>
-                                </p>
-                    </div>
-                </td>
-            </tr>
+                </div>
+            </div>
+        </div>
+        <div class="flex-row">
+            <div class="flex-col" id="contactInfo" colspan="2">
+                <div>
+                    <h3>Contact
+                        Info
+                        <h3>
+                            <p id="contactInfoText">
+                                <a id="contactInfoText" href="discord://-/users/727603391550718042">Discord:
+                                    heckerwithahat</a>
+                                <br>
+                                <a id="contactInfoText" href="https://twitter.com/heckerwithahat">Twitter:
+                                    @HeckerWithAHat</a>
+                                <br>
+                                <a id="contactInfoText" href="https://github.com/HeckerWithAHat">GitHub:
+                                    HeckerWithAHat</a>
+                                <br>
+                                <a id="contactInfoText"
+                                    href="https://www.youtube.com/channel/UC862SDV2MtCa8bqK37gAiSQ">YouTube:
+                                    HeckerWithAHat</a>
+                                <br>
+                                <a id="contactInfoText" href="https://steamcommunity.com/id/HeckerWithAHat/">Steam:
+                                    HeckerWithAHat</a>
+                                <br>
+                                <a id="contactInfoText" href="https://www.twitch.tv/heckerwithahat">Twitch:
+                                    heckerwithahat</a>
+                            </p>
+                </div>
+            </div>
+        </div>
 
-        </table>
+        </div>
     </body>
 
 
