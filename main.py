@@ -15,6 +15,9 @@ def projects():
 def languages():
     return render_template("languages.html")
 
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
 
 @app.route("/<path:name>")
 def get_file(name):

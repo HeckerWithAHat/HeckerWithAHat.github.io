@@ -11,33 +11,42 @@
     <link rel="stylesheet" href="heckerwithahattheme.css" />
 </head>
 
-<header class="my-5">
-    <div class="flex flex-col text-center justify-center items-center space-y-7">
-        <img src="media/profile_picture.png" alt="My Profile Picture" width="250" height="250" class="rounded-full">
-        <h1 class="text-7xl px-72 justify-center my-auto text-neutral-content">HeckerWithAHat</h1>
+<header class="sticky top-0">
+    <div class="navbar bg-neutral shadow-lg text-neutral-content">
+        <div class="container mx-auto">
+            <div class="flex-1 justify-start">
+                <a href="/" class="text-lg font-bold">HeckerWithAHat</a>
+            </div>
+            <ul class="menu menu-horizontal rounded-box">
+                <li><a href="/">Home</a></li>
+                <li><a href="projects">Projects</a></li>
+                <li><a href="languages" class="underline font-bold">Languages</a></li>
+                <li><a href="contact">Contacts</a></li>
+            </ul>
+        </div>
     </div>
 </header>
 
 <body>
+    <div class="flex flex-col text-center justify-center items-center space-y-7 my-5">
+        <img src="media/profile_picture.png" alt="My Profile Picture" width="250" height="250" class="rounded-full">
+        <h1 class="text-7xl px-72 justify-center my-auto text-neutral-content">HeckerWithAHat</h1>
+    </div>
     <div class="card bg-neutral mx-24 border-4 border-black">
-        <div class="card-title text-center justify-center text-5xl text-neutral-content">Languages</div>
-        <div class="card-body text-center justify-center text-2xl text-neutral-content">
-            <div class="flex flex-col space-y-7">
-
+        <div class="card-body">
+            <div class="card-title text-center justify-center text-5xl text-neutral-content">Languages</div>
+            <div class="card-body text-center justify-center text-2xl text-neutral-content">
                 <div class="flex flex-row place-content-evenly">
-                    <div class="radial-progress" style="--value:75; --size:12rem; --thickness: 1rem;">C#
-                    </div>
-                    <div class="radial-progress" style="--value:90; --size:12rem; --thickness: 1rem;">Java
-                    </div>
-                    <div class="radial-progress" style="--value:70; --size:12rem; --thickness: 1rem;">
-                        HTML/CSS</div>
-                    <div class="radial-progress" style="--value:40; --size:12rem; --thickness: 1rem;">
-                        JavaScript</div>
-                    <div class="radial-progress" style="--value:45; --size:12rem; --thickness: 1rem;">
-                        Python</div>
+                    <div class="radial-progress" style="--value:75; --size:12rem; --thickness: 1rem;">C#</div>
+                    <div class="radial-progress" style="--value:90; --size:12rem; --thickness: 1rem;">Java</div>
+                    <div class="radial-progress" style="--value:70; --size:12rem; --thickness: 1rem;">HTML/CSS</div>
+                    <div class="radial-progress" style="--value:40; --size:12rem; --thickness: 1rem;">JavaScript</div>
+                    <div class="radial-progress" style="--value:45; --size:12rem; --thickness: 1rem;">Python</div>
                 </div>
             </div>
         </div>
+    </div>
+    
 </body>
 
 </html>
