@@ -2,7 +2,14 @@ from flask import Flask, request, render_template, send_file
 
 app = Flask(__name__)
 banned_files = ["main.py"]
-
+colors = {
+    "light_green": "0fc87d",
+    "black":"080c0a",
+    "green":"0c6436",
+    "gray":"34343b",
+    "dark_green":"0d341f",
+    "light_gray":"84848c"
+    }
 @app.route("/")
 def home():
     return render_template("index.html")
