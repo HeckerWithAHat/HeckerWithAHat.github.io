@@ -45,18 +45,18 @@ var numChars = Math.ceil(webpageArea / avgCharArea);    var randomstring = '';
     bgDiv.style.overflow = 'hidden';
     bgDiv.style.zIndex = -1;
     bgDiv.style.pointerEvents = 'none';
-    bgDiv.style.whiteSpace = 'pre-wrap'; // Allow the text to wrap
-    bgDiv.style.wordWrap = 'break-word'; // Break long words to prevent overflow
+    bgDiv.style.whiteSpace = 'pre-wrap';
+    bgDiv.style.wordWrap = 'break-word';
     bgDiv.style.fontFamily = 'monospace';
     bgDiv.style.backgroundColor = '#fff';
     bgDiv.style.opacity = 1;
     bgDiv.innerText = randomstring;
     bgDiv.style.fontSize = '15px';
     bgDiv.style.fontFamily = 'monospace';
-    bgDiv.style.backgroundColor = '#000000';
+    bgDiv.style.backgroundColor = '#000000'; // Needs to be set to b1 value
     //bgDiv.style.color = '#333333';
-    bgDiv.style.color = 'rgba(18,244,176,1)';
-    bgDiv.style.opacity = 0.25;
+    bgDiv.style.color = '#0d341f'; // Needs to be set to the dark green
+    bgDiv.style.opacity = 0.75;
 
     // Add the div to the body
     document.body.appendChild(bgDiv);
