@@ -37,4 +37,4 @@ def get_file(name):
         return " "
 
 if __name__ == "__main__":
-    app.run(debug="true")
+    app.run(host="0.0.0.0",debug="true",port=5000)
